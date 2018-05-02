@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://thetechzonelive.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://thetechzonelive.com/" rel="alternate" type="text/html" /><updated>2018-05-02T12:10:28-04:00</updated><id>https://thetechzonelive.com/</id><title type="html">The Tech Zone Live</title><subtitle>By Anthony Di Iorio VE2HEW</subtitle><entry><title type="html">ISS SSTV December Event</title><link href="https://thetechzonelive.com/ISS-SSTV-December-Event" rel="alternate" type="text/html" title="ISS SSTV December Event" /><published>2017-12-08T00:00:00-05:00</published><updated>2017-12-08T00:00:00-05:00</updated><id>https://thetechzonelive.com/ISS-SSTV-December-Event</id><content type="html" xml:base="https://thetechzonelive.com/ISS-SSTV-December-Event">&lt;p&gt;Whether you’re a ham or just a listener, capturing images from the International Space Station is always a lot of fun. With a little help from a satellite tracking program, you can easily receive images from the ISS with nothing more than a cheap RTL-SDR dongle, a scanner, or a handheld VHF radio.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2017/12/ISS-SSTV-1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;images/2017/12/ISS-SSTV-2.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;images/2017/12/ISS-SSTV-3.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;images/2017/12/ISS-SSTV-4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;My simple setup consists of:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://hamsoft.ca/pages/mmsstv.php&quot;&gt;MM-SSTV&lt;/a&gt; to decode&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.stoff.pl/&quot;&gt;Orbitron&lt;/a&gt; for tracking and auto doppler shift&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://heavens-above.com/&quot;&gt;Heavens-Above&lt;/a&gt; website for pass predictions&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osmocom.org/projects/sdr/wiki/rtl-sdr&quot;&gt;RTL-SDR&lt;/a&gt; dongle&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://airspy.com/download/&quot;&gt;SDRSharp&lt;/a&gt; with the following plugins:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.satsignal.eu/software/DDETracker.html&quot;&gt;DDE Tracking Client&lt;/a&gt; for auto doppler shift&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://rtl-sdr.ru/uploads/download/dsd.zip&quot;&gt;DSD Interface&lt;/a&gt; for aux audio output to &lt;a href=&quot;https://www.vb-audio.com/Cable/index.htm&quot;&gt;VB-Audio Virtual Cable&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Backup radio:
+    &lt;ul&gt;
+      &lt;li&gt;Kenwood TH-K20A&lt;/li&gt;
+      &lt;li&gt;Zoom H2n Audio Recorder&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Horizontal VHF Antenna&lt;/li&gt;
+  &lt;li&gt;Vertical VHF Antenna&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The reason I use two antennas on two radios, is so that if the polarity shifts during the pass, I can easily decode both images and merge them later in Photoshop. Ideally you should use a yagi antenna, but the ISS usually puts out at least 25W for SSTV transmissions. The signal should easily be full quieting on a handheld if you’ve got a clear shot at the sky.&lt;/p&gt;
+
+&lt;p&gt;For updates on the next ISS SSTV event, keep an eye on &lt;a href=&quot;http://ariss-sstv.blogspot.com/&quot;&gt;ariss-sstv.blogspot.com&lt;/a&gt;&lt;/p&gt;</content><author><name>Anthony Di Iorio</name></author><category term="Ham Radio" /><summary type="html">Whether you’re a ham or just a listener, capturing images from the International Space Station is always a lot of fun. With a little help from a satellite tracking program, you can easily receive images from the ISS with nothing more than a cheap RTL-SDR dongle, a scanner, or a handheld VHF radio.</summary></entry><entry><title type="html">Acer S243HL Monitor Repair</title><link href="https://thetechzonelive.com/acer-s243hl-monitor-repair" rel="alternate" type="text/html" title="Acer S243HL Monitor Repair" /><published>2016-09-07T02:54:01-04:00</published><updated>2016-09-07T02:54:01-04:00</updated><id>https://thetechzonelive.com/acer-s243hl-monitor-repair</id><content type="html" xml:base="https://thetechzonelive.com/acer-s243hl-monitor-repair">&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/FIskIZ_JoGc&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Unfortunately my monitor failed last week and it was the classic case of bad capacitors… You’d think manufacturers would have learned by now to avoid cheap Chinese capacitors, but it seems to still be a problem :(&lt;/p&gt;
+
+&lt;p&gt;The two capacitors that failed were Su’Scon SG Series 470uF 16v. There were a few more Su’Scon and Jamicon capacitors on the board that hadn’t bulged so I didn’t replace them. I did buy replacements for them just in case they fail in the future…&lt;/p&gt;
+
+&lt;p&gt;Here’s some high res photos if you’re interested in some more technical parts of the board.&lt;/p&gt;
+
+&lt;p&gt;&lt;a data-flickr-embed=&quot;true&quot; href=&quot;https://www.flickr.com/photos/anthonydiiorio/29403027512/in/album-72157670289213833/&quot; title=&quot;Acer Repair&quot;&gt;&lt;img src=&quot;https://c1.staticflickr.com/9/8230/29403027512_4c628a7d07_k.jpg&quot; width=&quot;2048&quot; height=&quot;1365&quot; alt=&quot;Acer Repair&quot; /&gt;&lt;/a&gt;&lt;script async=&quot;&quot; src=&quot;//embedr.flickr.com/assets/client-code.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Download: &lt;a href=&quot;https://c1.staticflickr.com/9/8230/29403027512_10f9af32b7_o.jpg&quot;&gt;Top&lt;/a&gt; / &lt;a href=&quot;https://c1.staticflickr.com/9/8201/29477349066_bbd3bd2f90_o.jpg&quot;&gt;Bottom&lt;/a&gt;&lt;/p&gt;</content><author><name>Anthony Di Iorio</name></author><category term="Electronics" /><summary type="html"></summary></entry><entry><title type="html">Fnatic Gear Rush Mechanical Keyboard Review</title><link href="https://thetechzonelive.com/fnatic-rush-review" rel="alternate" type="text/html" title="Fnatic Gear Rush Mechanical Keyboard Review" /><published>2016-03-31T06:35:00-04:00</published><updated>2016-03-31T06:35:00-04:00</updated><id>https://thetechzonelive.com/fnatic-rush-review</id><content type="html" xml:base="https://thetechzonelive.com/fnatic-rush-review">&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/wXQlPIYtkzQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Purchase: &lt;a href=&quot;http://amzn.to/2cZ0P9L&quot;&gt;Amazon US&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Last week I reviewed &lt;a href=&quot;/fnatic-flick-focus/&quot;&gt;Fnatic Gear’s Flick mouse, and Focus mouse pad&lt;/a&gt;, which means it’s time for the review of the Rush Mechanical Keyboard!&lt;/p&gt;
+
+&lt;p&gt;The Rush is a full size 104 key mechanical keyboard available in your choice of either Cherry MX Red, Blue, or Brown mechanical switches. The keyboard features a soft touch casing, red backlighting, and onboard storage for macros.&lt;/p&gt;
+
+&lt;h3 id=&quot;build-quality-and-features&quot;&gt;Build Quality and Features&lt;/h3&gt;
+
+&lt;p&gt;The Rush is a solid keyboard! It’s really heavy, and very rigid thanks to the red metal backplate holding the switches in place. The backplate also provides a nice surface for the red LEDs to reflect off of, which creates a smooth, even backlight. On the front of the keyboard, you’ll find two notches where you can attach the included wrist wrest. On the back of the keyboard there’s the 1.8 meter braided cable, and a two port USB 2.0 hub. This is great if you need to plug in a USB headset or a game controller. Another neat thing you can do with the hub is plug in a USB fan for those hot summer days.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2016/rush-usb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Rush also includes a function layer with volume keys, media keys, a profile switcher, and Fnatic Gear Mode. Fnatic Gear mode disables the windows key, and enables the profile macros. You can also use the function button to set the backlight to either Low, Medium, High, and Pulsate.&lt;/p&gt;
+
+&lt;h3 id=&quot;comfort&quot;&gt;Comfort&lt;/h3&gt;
+
+&lt;p&gt;The Rush includes a 2.5 inch wide plastic wrist wrest that’s coated in the same soft touch finish as the rest of the board. It connects to the keyboard with two plastic clips and stays in place very nicely. The wrist rest is comfortable, and works great with the keyboard in the flat or raised positions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2016/rush-full.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In terms of key feel, the keycaps would definitely benefit from some more texture. I find they’re too smooth, and can sometimes create friction and squeaking when typing fast.&lt;/p&gt;
+
+&lt;h3 id=&quot;keycaps&quot;&gt;Keycaps&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2016/rush-keycaps.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Being a backlit keyboard, the Rush uses 1mm thick translucent ABS keycaps with a black coating. Each key is individually lit by a 3mm red LED. Backlighting is smooth and even across most keys thanks to the red backplate, but multi row keys (Caps Lock / Function Row) have some dark spots. This seems to be a problem on most backlit boards using the old style Cherry switches, so hopefully we can see more boards using Cherry’s new MX RGB translucent switches in the future.&lt;/p&gt;
+
+&lt;p&gt;In terms of typing, the keycaps feel a bit too grippy for my tastes. I find the keycaps are too smooth because they have what seems like a toned town soft touch finish that doesn’t have a pleasant texture to type on. The keycaps also tended to retain finger prints after typing or gaming for a long time. This is something that wouldn’t be a problem if they keycaps just had some more texture to them.&lt;/p&gt;
+
+&lt;h3 id=&quot;software&quot;&gt;Software&lt;/h3&gt;
+
+&lt;p&gt;The Rush has 5 programmable profiles, each with 10 slots for macros and Fnatic’s built in functions. The software is simple to use, and stores macros directly on the keyboard’s onboard storage which means you can take the keyboard with you, and not worry about a computer that doesn’t have the software installed.&lt;/p&gt;
+
+&lt;p&gt;To set a macro, simply click on the macro slot, select a key to use, and then use the drop down menu to pick a pre-programmed macro, or create your own using the editor.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2016/L2xr3j9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2016/rush-logo.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Fnatic Gear’s Rush Mechanical Keyboard is an interesting board. It features a very solid construction and has some neat features like the built in USB hub. Programing macros is simple, and it’s nice to see they are stored on the onboard memory.  My only gripe with this keyboard is with the keycaps, but that is a very subjective area. It’s really up to you to decide if you like the smoother/soft touch finish these keycaps offer.&lt;/p&gt;
+
+&lt;h3 id=&quot;availability&quot;&gt;Availability&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.fnaticgear.com/&quot;&gt;Fnatic Gear&lt;/a&gt; / 
+&lt;a href=&quot;http://shop.fnatic.com/products/fnatic-gear-flick-optical-mouse&quot;&gt;Rush&lt;/a&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;disclosures&quot;&gt;Disclosures&lt;/h6&gt;
+&lt;p&gt;I was not financially compensated for this review. Fnatic Gear provided the Flick and Focus samples for review. The opinions expressed in my review are my own based on my experience with the products.&lt;/p&gt;</content><author><name>Anthony Di Iorio</name></author><category term="Keyboards" /><summary type="html"></summary></entry><entry><title type="html">Fnatic Flick Mouse &amp;amp; Focus Mouse Pad Review</title><link href="https://thetechzonelive.com/fnatic-flick-focus" rel="alternate" type="text/html" title="Fnatic Flick Mouse &amp; Focus Mouse Pad Review" /><published>2016-03-22T16:00:00-04:00</published><updated>2016-03-22T16:00:00-04:00</updated><id>https://thetechzonelive.com/fnatic-flick-focus</id><content type="html" xml:base="https://thetechzonelive.com/fnatic-flick-focus">&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/jGb0RztcLHo&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Purchase: Amazon US: &lt;a href=&quot;http://amzn.to/2dvnucy&quot;&gt;Flick&lt;/a&gt; / &lt;a href=&quot;http://amzn.to/2dfwoJZ&quot;&gt;Focus&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you’re familiar with gaming tournaments you’ve probably heard of Fnatic before. They have 5 different gaming teams, and you can usually find them dominating their opponents live on Twitch. That being said, I was pretty excited to check out the latest gaming peripherals they had to offer.&lt;/p&gt;
+
+&lt;h2 id=&quot;flick-optical-gaming-mouse-review&quot;&gt;FLICK Optical Gaming Mouse Review&lt;/h2&gt;
+
+&lt;p&gt;The Flick is a no nonsense gaming mouse, with a clean design, comfortable layout, and features the flawless Pixart 3310 optical sensor.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2016/flick-side-1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;specs&quot;&gt;Specs&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;MCU/Processor: Holtek HT68FB560&lt;/li&gt;
+  &lt;li&gt;Main switches: Omron&lt;/li&gt;
+  &lt;li&gt;Sensor: ADNS 3310&lt;/li&gt;
+  &lt;li&gt;Memory: 256 kB&lt;/li&gt;
+  &lt;li&gt;Resolution: 5000 CPI&lt;/li&gt;
+  &lt;li&gt;Frames per second: 6500&lt;/li&gt;
+  &lt;li&gt;Tracking speed: 130 IPS&lt;/li&gt;
+  &lt;li&gt;Max acceleration: 30g&lt;/li&gt;
+  &lt;li&gt;Report rate: Adjustable, up to 1000Hz&lt;/li&gt;
+  &lt;li&gt;Cable: 2 m braided USB 2.0&lt;/li&gt;
+  &lt;li&gt;Weight: 90g&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;comfort&quot;&gt;Comfort&lt;/h3&gt;
+&lt;p&gt;The Flick is a very comfortable mouse. It features a soft touch finish that is easy to grip on to, and easy to clean. The mouse is also lightweight, coming in at only 90g. I found this weight to be comfortable for long hours of gaming and it didn’t put any strain on my wrists. The mouse also has a drag reduction cable which comes out of the mouse at 30 degrees to prevent the cable from rubbing on your mouse pad. I found it held up to this claim very well, but I did notice the cable is very stiff. The mouse would could definitely be improved with a softer cable. The feet are very smooth and glide well on my Mionix mouse pad and the Focus mouse pad that I will be discussing later in this review.&lt;/p&gt;
+
+&lt;p&gt;Button placement on the mouse is also very good. I did not find myself accidentally pressing any of the side buttons or the profile switcher while using the mouse. Unfortunately the mouse does have one critical flaw with the scroll wheel. I found when scrolling up, I would press the middle mouse button by accident about 75% of the time. This could be fixed if the button was harder to press and by lowering the force required to scroll.&lt;/p&gt;
+
+&lt;h3 id=&quot;gaming-and-sensor&quot;&gt;Gaming and Sensor&lt;/h3&gt;
+&lt;p&gt;As a Counter Strike player, I can definitely attest to the fact that a flawless sensor with no acceleration is necessary to play the game. The mouse should also perform under high acceleration with predictable results every time. The Flick uses the very popular Pixart 3310 which is a highly regarded sensor in the gaming community. I used this mouse to play Operation Wildfire in Counter Strike: Global Offensive, and I was very happy with the results. The sensor is accurate, and very confidence inspiring.&lt;/p&gt;
+
+&lt;h3 id=&quot;software&quot;&gt;Software&lt;/h3&gt;
+&lt;p&gt;The Flick’s software is very clean and easy to navigate. The mouse has the ability to store 3 separate profiles, each with basic settings, button assignments, color settings, and macros. If you’re reinstalling your OS or switching PCs, you also have the option to backup and restore your settings.&lt;/p&gt;
+
+&lt;h4 id=&quot;basic-settings&quot;&gt;Basic Settings&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;images/2016/02lz03P.png&quot; alt=&quot;&quot; /&gt;
+Basic settings allow you to set the CPI from 50 to 5000 in 50 CPI increments. You can also set 3 CPI levels which can be cycled through on the mouse if you have a button assigned to do so. Here you can also set up sensitivity, scroll speed, scroll by page, double click speed, and polling rate. Unfortunately at the time of this review you cannot adjust lift off distance, but hopefully this can be solved with a firmware update in the future.&lt;/p&gt;
+
+&lt;h4 id=&quot;button-assignments&quot;&gt;Button Assignments&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;images/2016/L2mN1to.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Flick includes 8 programmable buttons including the scroll wheel. Here you can assign any button to do pretty much anything. I personally use one button to trigger my push-to-talk and another to play/pause my music. Of course, you can also set a button to perform a macro, and disable a button entirely.&lt;/p&gt;
+
+&lt;h4 id=&quot;color-settings&quot;&gt;Color Settings&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;images/2016/U2nj7yV.png&quot; alt=&quot;&quot; /&gt;
+The Flick features a RGB LED under the scroll wheel which can be controlled in the Color Settings tab. You can choose to have the LED on or off, cycle through every color, or set  it to a single color with the option to have it pulsate, heartbeat, blink, fade in, or fade out. I found the mouse gives off a soft glow that isn’t distracting, and fades smoothly without any noticeable stepping.&lt;/p&gt;
+
+&lt;h4 id=&quot;macro-recorder&quot;&gt;Macro Recorder&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;images/2016/m2ot2hB.png&quot; alt=&quot;&quot; /&gt;
+The macro recorder is very easy to use. Simply click on the record button, and use your mouse and keyboard to set the macro. Press record again to stop, and give it a name. Your macros will now appear in the button assignments menu.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;The Flick is a pretty nice mouse overall, but it could be better. I would like to see a better scroll wheel without the miss-click issue, and I would also like the ability to adjust liftoff distance in the software. With these tweaks, the mouse would be perfect. It’s lightweight, comfortable, has great software, and a flawless sensor. Hopefully we can see an updated version in the near future!&lt;/p&gt;
+
+&lt;h2 id=&quot;focus-mouse-mad-review&quot;&gt;Focus Mouse Mad Review&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2016/focus--1-of-3-.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Fnatic Focus is a soft mouse pad with a 3mm non-slip rubber grip. The Focus is an incredibly smooth mouse pad. I couldn’t feel any feedback from the mouse pad at all compared to my Mionix Sargas 900 which is a bit rough. The mouse just glides effortlessly across the mouse pad. Wrist comfort is also excellent with this mouse pad. The 3mm rubber layer provides a soft area for your wrists to rest on.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2016/focus--3-of-3-.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Gaming with the Focus was great too. The surface tracked great with both laser and optical mice. I tested it with my Logitech G700 which has an ADNS 9500 Laser Sensor, and the Fnatic Flick which has a Pixart 3310 Optical Sensor. Tracking was smooth and provided a very nice surface to make small adjustments on. While testing with fast flicks, the mouse pad stayed in place and did not warp at all.&lt;/p&gt;
+
+&lt;p&gt;The Focus is available in 5 sizes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;M: 280 x 214 x 3mm&lt;/li&gt;
+  &lt;li&gt;L: 340 x 260 x 3mm&lt;/li&gt;
+  &lt;li&gt;XL: 400 x 305 x 3mm&lt;/li&gt;
+  &lt;li&gt;XXL: 487 x 372 x 3mm&lt;/li&gt;
+  &lt;li&gt;Desktop: 950 x 450 x 3mm&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;conclusion-1&quot;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;The Focus is a fantastic mouse pad. It’s comfortable, tracks great, and is silky smooth. I can definitely recommend this product!&lt;/p&gt;
+
+&lt;h3 id=&quot;availability&quot;&gt;Availability&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.fnaticgear.com/&quot;&gt;Fnatic Gear&lt;/a&gt; / 
+&lt;a href=&quot;http://shop.fnatic.com/products/fnatic-gear-flick-optical-mouse&quot;&gt;Flick&lt;/a&gt; /
+&lt;a href=&quot;http://shop.fnatic.com/products/fnatic-gear-focus-mousepad&quot;&gt;Focus&lt;/a&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;disclosures&quot;&gt;Disclosures&lt;/h6&gt;
+&lt;p&gt;I was not financially compensated for this review. Fnatic Gear provided the Flick and Focus samples for review. The opinions expressed in my review are my own based on my experience with the products.&lt;/p&gt;</content><author><name>Anthony Di Iorio</name></author><category term="Peripherals" /><summary type="html"></summary></entry><entry><title type="html">Checking out Ford’s Racing Simulator</title><link href="https://thetechzonelive.com/ford-racing-sim" rel="alternate" type="text/html" title="Checking out Ford's Racing Simulator" /><published>2016-03-11T01:23:26-05:00</published><updated>2016-03-11T01:23:26-05:00</updated><id>https://thetechzonelive.com/ford-racing-sim</id><content type="html" xml:base="https://thetechzonelive.com/ford-racing-sim">&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/acdJiDlHqDE&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;So this was my first experience on a full motion racing sim, and I was pretty impressed with how that extra layer of force feedback adds to the realism of the game. I’ve tried other rigs with vibration motors, and others with just a triple monitor setup, but this was just on another level of realism. Unfortunately, Ford’s using rFactor 1 which happens to be a 10 year old sim, and while it doesn’t exactly have the greatest graphics or physics in the world, it was still a great experience. I’d to have loved to tried this simulator with something more recent like rFactor 2, iRacing, or Assetto Corsa, but ultimately, the simulator is made my Mannetron, so I guess it’s up to them to bring their software up to speed.&lt;/p&gt;
+
+&lt;p&gt;The simulator uses three hydraulic lifts and a rotation platform to provide the force feedback, and they’re using a Logitech Z906 surround sound system, which is pretty common in these commercial sims. They also use a full size wheel, and while it does have paddle shifters, they aren’t enabled. I was really impressed with how immersive this rig was though. I really felt like I was driving a car, and completely forgot I was sitting 6 feet off the ground surrounded by the latest and greats cars at the show. Not to mention the Focus RS was there and seeing it in person for the first time was great.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2016/focusrs.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;a href=&quot;https://www.flickr.com/photos/anthonydiiorio/albums/72157664218930455&quot;&gt;Flickr Album&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Being at the Ford booth, the race is one lap in a mustang against AI. I’ve never raced on this specific track so I don’t know how well I finished, but I’m sure there’s lots of room for improvement given a few more laps. It would have been nice for them to have a leader board so we could see how we did.&lt;/p&gt;</content><author><name>Anthony Di Iorio</name></author><category term="Cars" /><summary type="html"></summary></entry><entry><title type="html">Hubsan X4 Review</title><link href="https://thetechzonelive.com/hubsan-x4-review" rel="alternate" type="text/html" title="Hubsan X4 Review" /><published>2015-07-13T16:00:00-04:00</published><updated>2015-07-13T16:00:00-04:00</updated><id>https://thetechzonelive.com/hubsan-x4-review</id><content type="html" xml:base="https://thetechzonelive.com/hubsan-x4-review">&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/QyC8fuHvWR8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;A few months back I took an interest in building a quadcopter. Unfortunately I quickly realized it would just become another one of my expensive hobbies that’ll end up being high maintenance when I inevitably crash my quad. I decided to go the entry-level route and picked up a cheap quad that gets praised on &lt;a href=&quot;http://reddit.com/r/multicopter&quot;&gt;/r/multicopter&lt;/a&gt;, the &lt;a href=&quot;http://amzn.to/1L3HLTf&quot;&gt;Hubsan X4&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are a few versions of the Hubsan X4:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://amzn.to/1L3HLTf&quot;&gt;H107L&lt;/a&gt; - Standard&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://amzn.to/1S8kTTR&quot;&gt;H107C&lt;/a&gt; - Camera&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://amzn.to/1S8kWyW&quot;&gt;H107D&lt;/a&gt; - FPV&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The H107C only costs $10 more, but I don’t think it’s worth the weight of the camera and the extra energy to power it. The X4 doesn’t have a great flight time in it’s standard form; adding a camera won’t help that. I also think the FPV version is a waste of money because it costs over $100 more than the standard unit.&lt;/p&gt;
+
+&lt;h3 id=&quot;whats-in-the-box&quot;&gt;What’s in the box?&lt;/h3&gt;
+
+&lt;p&gt;The Hubsan X4 comes with a remote, battery, charger and a set of replacement props. I highly recommend picking up some extra batteries and a prop guard. I’ve crashed my X4 dozens of times and  the prop guards have done their job perfectly. I’m happy to report the set of replacement props are still in their packaging :)&lt;/p&gt;
+
+&lt;h3 id=&quot;flying&quot;&gt;Flying&lt;/h3&gt;
+
+&lt;p&gt;Before taking off, it’s best to put the quad on a flat and level surface to calibrate the gyroscope. To do this, hold the left stick in the bottom left corner, and move the right stick from left to right until   all four LEDs blink. You’re now calibrated! I found the X4 still likes to drift around, but the trim buttons can help out with that in most cases.&lt;/p&gt;
+
+&lt;p&gt;I wouldn’t say the X4 is too stable, but because of it’s small size it’s pretty easy to manage. Once you get the hang of flying, the remote can be put into an “Advanced Mode” by pushing down the right stick (mode 2). In this mode, the sticks are very sensitive so it’s a lot easier to crash for an inexperienced user. A cool thing you can do in Advanced Mode is flips. If you’re flying outside, or in an area with a lot of vertical space, flick the right stick from one side to another quickly and it’ll execute a pre-programmed flip. It’s kinda cool, but I wish you could disable it in Advanced Mode.&lt;/p&gt;
+
+&lt;p&gt;The X4’s included 240mAh battery lasts for around 5 minutes. You can get a larger battery with a 380mAh capacity that will last around 7 minutes.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;For around $40, the Hubsan X4 can’t be beat. I would strongly recommend it over any of those other quadcopters that use a smartphone as a remote. With this, you’ll learn the controls properly so you can train yourself before moving up to a larger and more expensive quad.
+___&lt;/p&gt;
+
+&lt;h6 id=&quot;disclosures&quot;&gt;Disclosures&lt;/h6&gt;
+&lt;p&gt;I purchased the product with my own funds. The opinions expressed in this review are my own, no one reviewed the content before it was posted, and I am not being compensated for my review.&lt;/p&gt;
+
+&lt;p&gt;We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.&lt;/p&gt;</content><author><name>Anthony Di Iorio</name></author><category term="Electronics" /><summary type="html"></summary></entry><entry><title type="html">Harman Kardon HK3400 Cleanup</title><link href="https://thetechzonelive.com/harman-kardon-hk3400-cleanup" rel="alternate" type="text/html" title="Harman Kardon HK3400 Cleanup" /><published>2015-03-19T16:00:00-04:00</published><updated>2015-03-19T16:00:00-04:00</updated><id>https://thetechzonelive.com/harman-kardon-hk3400-cleanup</id><content type="html" xml:base="https://thetechzonelive.com/harman-kardon-hk3400-cleanup">&lt;p&gt;For the last few weeks, my Harman Kardon HK3400 has been driving me up a wall. Both the left and right channels would cut out constantly; often in very short bursts. It got to the point where the music was unlistenable because it just got too distracting.&lt;/p&gt;
+
+&lt;p&gt;I did some research and experimentation, and it looked like I had a classic case of dirty potentiometers. This is common in old audio equipment because the contacts of the potentiometers will oxidize over time and cause a poor connection.&lt;/p&gt;
+
+&lt;p&gt;Luckily there’s a pretty simple fix. The first step is to take care of all the dust in the case. Simply open the amp up and blow out all the dust with some compressed air. I used an air compressor, but canned air will do. Make sure to clean as much dust out as possible, especially near all the potentiometers. At this point if the amp wasn’t producing any sort of scratchy sound when moving the knobs around, you should be good to go. If not, you should use a contact cleaner on the potentiometers directly. One product most people recommend is DeOxit. Here’s a great guide on how to use it from user Arkay on &lt;a href=&quot;http://www.audiokarma.org/forums/showthread.php?t=207005&quot;&gt;AudioKarma.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In my case, I was done after a simple dusting :)&lt;/p&gt;
+
+&lt;p&gt;These old amplifiers are incredibly well made, and will stand the test of time if you treat them well. A cleaning every few years will make these amps last a lifetime. Mine’s been going strong for over 30 years!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2016/hk1-1-.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;images/2016/hk2-1-.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;images/2016/hk3-1-.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;images/2016/hk5-1-.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;images/2016/hk6-1-.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;images/2016/hk7-1-.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Anthony Di Iorio</name></author><category term="Audio" /><summary type="html">For the last few weeks, my Harman Kardon HK3400 has been driving me up a wall. Both the left and right channels would cut out constantly; often in very short bursts. It got to the point where the music was unlistenable because it just got too distracting.</summary></entry><entry><title type="html">ErgoDox Review</title><link href="https://thetechzonelive.com/ergodox-review" rel="alternate" type="text/html" title="ErgoDox Review" /><published>2014-08-06T16:00:00-04:00</published><updated>2014-08-06T16:00:00-04:00</updated><id>https://thetechzonelive.com/ergodox-review</id><content type="html" xml:base="https://thetechzonelive.com/ergodox-review">&lt;h3 id=&quot;preface&quot;&gt;Preface&lt;/h3&gt;
+
+&lt;p&gt;A few months back I joined the &lt;a href=&quot;https://www.massdrop.com/r/H6WV3U&quot;&gt;Massdrop&lt;/a&gt; group buy for the ErgoDox. If you don’t know what &lt;a href=&quot;https://www.massdrop.com/r/H6WV3U&quot;&gt;Massdrop&lt;/a&gt; or a group buy is, basically it allows you to join in on a bulk purchase of a product so the group can get a lower price. Since the ErgoDox requires cooperation from component vendors, a PCB manufacturer, and a company that can do laser cutting, it took absolutely ages for the kit to arrive.&lt;/p&gt;
+
+&lt;p&gt;Now this keyboard isn’t exactly what I’d call affordable. It costs 200 for the keyboard, $45 extra if you want keycaps, and I think they also have more expensive switch options because they’re hard to source (but don’t quote me on that because the group buy isn’t going on at the time of this review so I can’t see the price breakdown).&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/oeJk_43UmGQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The hard part was over (I’m very impatient). The kit had finally arrived and it was time to open the damn box. Inside I found all the components I needed to build my very own ErgoDox!&lt;/p&gt;
+
+&lt;p&gt;Now while we’re here, I’d like to take a minute to explain the alternative to Massdrop when building an ErgoDox. This keyboard’s design is licensed under the GNU General Public License v3 which means it’s free as in freedom. Since it’s free you can download the PCB, case, and a list of parts so you can source your own components. Doing this is faster than Massdrop, but can be more expensive. The benefit however is since the design is free, you can change anything from the colour of the PCB to the design of the case.&lt;/p&gt;
+
+&lt;p&gt;Everything you need to get started can be found at &lt;a href=&quot;http://ergodox.org/&quot;&gt;ErgoDox.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;assembly&quot;&gt;Assembly&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/GpCaQGGcdOE&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;If you’re new to soldering, I highly recommend checking out the EEVBlog’s videos about soldering. I’ve linked them below:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=J5Sb21qbpEQ&quot;&gt;Part 1 - Tools&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=fYz5nIHH0iY&quot;&gt;Part 2 - Through Hole&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=b9FC9fAlfQE&quot;&gt;Part 3 - Surface Mount&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Things you’ll need for the build:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Soldering station&lt;/li&gt;
+  &lt;li&gt;Thin solder. I use 0.031 Diameter 60/40 Rosin Core solder.&lt;/li&gt;
+  &lt;li&gt;Tweezers&lt;/li&gt;
+  &lt;li&gt;Side cutters&lt;/li&gt;
+  &lt;li&gt;Wire strippers&lt;/li&gt;
+  &lt;li&gt;Good eyes (or a magnifying glass/digital microscope)&lt;/li&gt;
+  &lt;li&gt;Good lighting so you can see the small components and polarity of the diodes&lt;/li&gt;
+  &lt;li&gt;Multimeter for troubleshooting&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For my build, I used a Hakko FX888D which I reviewed a while back on my channel. It’s a pretty fantastic digitally controlled soldering station that is reasonably priced  at ~$90 &lt;a href=&quot;http://http://www.amazon.com/gp/product/B00AWUFVY8?ie=UTF8&amp;amp;camp=213733&amp;amp;creative=393185&amp;amp;creativeASIN=B00AWUFVY8&amp;amp;linkCode=shr&amp;amp;tag=ttzl-20&amp;amp;linkId=DXH2PXUJLQRKAGMD&amp;amp;qid=1407337032&amp;amp;sr=8-1&amp;amp;keywords=fx888d&quot;&gt;Amazon&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Nd1WJ3NZIMI&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;For your build, you’ll want to set yourself up in a well ventilated area where you’ll have enough space to work and won’t be disturbed by anyone or pets who will start messing with small components. =^.^=&lt;/p&gt;
+
+&lt;p&gt;The build took a few hours, but most of the time was spent on the surface mount components. It was the first time I’d ever soldered with them and it was a challenge because they’re so small. It’s not too difficult if you  don’t mind some crooked components, but my OCD wants everything as perfect as possible. Speaking of OCD, the case was also a challenge because it’s unsurprisingly easy to get dust trapped under the layers of Plexiglas!&lt;/p&gt;
+
+&lt;h3 id=&quot;the-review&quot;&gt;The Review&lt;/h3&gt;
+&lt;p&gt;The first day was hell. I could not type to save my life, but I kept at it, and after two weeks I had mastered it. The reason the ErgoDox comes at a shock is because you’re not used to having your hands so far apart, and the keys are in a matrix layout as opposed to a staggered layout found on most keyboards. Some functions like Enter, Backspace and Delete get moved to your thumbs so that’ll also take a while to get used to. After you’ve gotten used to it, it can sometimes be difficult to switch back to a regular keyboard. I experienced this for the first time when I went back to school after using the ErgoDox for a few weeks.&lt;/p&gt;
+
+&lt;p&gt;If you’ve ever been uncertain about what key switch you like, it doesn’t really matter with the ErgoDox because you can choose pretty much anything and mix and match as well. Lets say you want all the letter keys to use MX Blue switches, the modifiers to use MX Clears, and the thumb keys to use MX Browns, it doesn’t matter with the ErgoDox! You can order switches from DigiKey for a reasonable price if you want to do this.&lt;/p&gt;
+
+&lt;p&gt;The ErgoDox was the first keyboard I’ve ever used with Cherry MX Blue switches and I like them quite a bit. I’m coming from MX Browns on my first keyboard, and I used MX Reds for a short period of time for my Func KB-460 review. I really like the clicky sound because it has helped me tremendously to stop bottoming out. The switch is a little heavier than MX Browns so I tend to get tired faster, but I guess this goes away over time.&lt;/p&gt;
+
+&lt;h3 id=&quot;build-quality&quot;&gt;Build Quality&lt;/h3&gt;
+
+&lt;p&gt;Well this depends mostly on how well the kit is put together, but by design it’s build very well. All the keys are plate mounted on a very thick sheet of Plexiglas, the keycaps feel great, the PCB looks stunning, and once put together, the case doesn’t flex at all. My only complaint is that the TRRS connectors feel a little cheap, but that can easily be upgraded by sourcing a better component and replacing the stock one. Alternatively, you can even hard wire the two keyboards together.&lt;/p&gt;
+
+&lt;h3 id=&quot;keycaps-and-layout&quot;&gt;Keycaps and Layout&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.massdrop.com/r/H6WV3U&quot;&gt;Massdrop&lt;/a&gt; offers either DSA or DCS keycaps for the ErgoDox. I went with the black DSA PBT keycaps for mine and I find them quite comfortable. Signature Plastics offers a variety of Base and Modifier sets for the ErgoDox, so you can customize it to your heart’s content. &lt;a href=&quot;http://http://keyshop.pimpmykeyboard.com/products/full-keysets/dsa-blank-sets-1&quot;&gt;Signature Plastics&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The keys are blank so you can make any layout you want in the layout editor. Since the layout is stored on the keyboard’s microcontroller, you can even program an alternative layout such as Dvorak or Colemak and it’ll work on any computer you plug the keyboard into without messing with operating system settings. This is good if you carry the keyboard with you and use it on school computers or at your workplace.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://f001.backblazeb2.com/file/thetechzonelive/2016/ergodox-editor-1-.jpg&quot; alt=&quot;&quot; /&gt;
+Source: &lt;a href=&quot;https://www.massdrop.com/ext/ergodox&quot;&gt;Massdrop ErgoDox Editor&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You may have noticed that the ErgoDox doesn’t exactly have as many keys as other keyboards. This is to keep the keyboard compact. To compensate for the lack of keys, the keyboard makes use of “layers” to add function keys, a numpad, and whatever else you’d like to include in the layers. I found Massdrop’s layout editor easy to use, but if you want to avoid it all together, you can download the source code and program the layout manually.&lt;/p&gt;
+
+&lt;h3 id=&quot;gaming&quot;&gt;Gaming&lt;/h3&gt;
+
+&lt;p&gt;One issue with the stock layout is that you can’t game because the Space key is on the right hand. I changed my layout to move the Space key onto the left hand where the Spacebar would normally be on a regular keyboard. After this tiny modification, the ErgoDox works well for the games I play, but I’m not sure if it’ll work for you if you have games that use any letter keys on the right hand. I’m also not a fan of the arrow keys for games like F1 2012 but I opt for a controller for racing games anyways so it doesn’t really matter.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;I really like this keyboard.&lt;/p&gt;
+
+&lt;h3 id=&quot;photos&quot;&gt;Photos&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;images/2016/ergodox-1-1-.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;images/2016/ergodox-2-1-.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;images/2016/ergodox-3-1-.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Anthony Di Iorio</name></author><category term="Keyboards" /><summary type="html">Preface</summary></entry><entry><title type="html">How to Change the Strap on Your Pebble</title><link href="https://thetechzonelive.com/how-to-change-the-strap-on-your-pebble" rel="alternate" type="text/html" title="How to Change the Strap on Your Pebble" /><published>2014-02-26T02:02:00-05:00</published><updated>2014-02-26T02:02:00-05:00</updated><id>https://thetechzonelive.com/how-to-change-the-strap-on-your-pebble</id><content type="html" xml:base="https://thetechzonelive.com/how-to-change-the-strap-on-your-pebble">&lt;p&gt;I picked up one of the original Pebble smartwatches a few weeks ago and it’s been pretty great, but the only thing I’d change is the strap. Fortunately you can because unlike the new Pebble Steel, the original Pebble accepts standard &lt;strong&gt;22mm watch bands&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/nGDVkw8zfRw&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;removing-the-stock-band&quot;&gt;Removing the stock band&lt;/h3&gt;
+
+&lt;p&gt;The Pebble uses a spring bar which will need to be shortened to be removed. You can use either a tool designed to do this, or use a thin knife to push the bar down. If you have many watches it’s worth getting the tool since there’s a good chance you will scratch something if you use a knife.&lt;/p&gt;
+
+&lt;h3 id=&quot;nato-straps&quot;&gt;NATO Straps&lt;/h3&gt;
+&lt;p&gt;If you plan on using &lt;a href=&quot;http://amzn.to/NsDwFA&quot;&gt;NATO straps&lt;/a&gt;, you’ll need to reinsert the spring bars back into the Pebble, and then thread the strap in. I love using these straps because they’re dirt cheap, and you can quickly change them out when you’re feeling in the mood for a different color. The nylon on these straps are much more comfortable compared to the stock silicone strap because it actually breathes. The nylon does tend to get wet when you’re washing your hands, but it dries off fairly quickly.&lt;/p&gt;
+
+&lt;p&gt;One major advantage to using a NATO strap over anything else is that it provides extra security if one of the spring bar fails. Since it threads under both bars rather than having two separate pieces connected to the watch, even if only one spring bar is secure, the watch will not fall off.&lt;/p&gt;
+
+&lt;h3 id=&quot;other-straps--customizations&quot;&gt;Other straps &amp;amp; customizations&lt;/h3&gt;
+&lt;p&gt;Since the Pebble accepts any &lt;a href=&quot;http://amzn.to/1hjqRPZ&quot;&gt;22mm watch band&lt;/a&gt;, you’re free to pick whatever you like! There are tons of metal, silicone, and leather straps available online for fairly cheap.&lt;/p&gt;
+
+&lt;p&gt;To take customization a step further, you can get skins for the Pebble in matte/glossy colors, carbon fiber, and fake metal/wood varieties. Most, if not all of the skins available online include screen protectors which are also very important since the Pebble’s screen is made of plastic and can scratch easily.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-few-weeks-with-the-pebble&quot;&gt;A Few Weeks With The Pebble&lt;/h3&gt;
+&lt;p&gt;This thing is &lt;strong&gt;awesome&lt;/strong&gt;. I love being able to just take a quick glance at my wrist when I receive a push notification and deciding if it’s worth the time to take out my phone. The recent release of the 2.0 firmware has brought great apps to my wrist, and I can’t wait to delve into the SDK and make my own in the coming weeks (because I’m busy at the moment).&lt;/p&gt;</content><author><name>Anthony Di Iorio</name></author><category term="Watches" /><summary type="html">I picked up one of the original Pebble smartwatches a few weeks ago and it’s been pretty great, but the only thing I’d change is the strap. Fortunately you can because unlike the new Pebble Steel, the original Pebble accepts standard 22mm watch bands.</summary></entry><entry><title type="html">Panavise Junior Review</title><link href="https://thetechzonelive.com/panavise-junior-review" rel="alternate" type="text/html" title="Panavise Junior Review" /><published>2013-11-13T02:15:00-05:00</published><updated>2013-11-13T02:15:00-05:00</updated><id>https://thetechzonelive.com/panavise-junior-review</id><content type="html" xml:base="https://thetechzonelive.com/panavise-junior-review">&lt;p&gt;I picked up a &lt;a href=&quot;http://amzn.to/2lg2wF9&quot;&gt;Panavise Junior&lt;/a&gt; a few months ago because I needed something to hold PCBs while I work. Before this I’d just work directly on my workspace and get constantly frustrated when the PCB shifted and components got moved out of place.&lt;/p&gt;
+
+&lt;p&gt;To mount PCBs or other small objects onto the vise there are two horizontal and two vertical slots available on the jaws. To control the position of the jaws there’s a small adjustment knob on the jaw assembly and a knob on the base to move the head.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-build&quot;&gt;The Build&lt;/h2&gt;
+
+&lt;p&gt;Despite the Junior being Panavise’s lowest end tabletop vise, it still features a strong base made out of cast aluminum. Unfortunately it falls short on the jaws because they are made with plastic. I doubt this would become an issue in the future since small PCBs shouldn’t carry much weight, but it’s still something I’d worry about if you were to put too much tension on them.&lt;/p&gt;
+
+&lt;h2 id=&quot;teach-an-old-vise-new-tricks&quot;&gt;Teach an old vise new tricks&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://f001.backblazeb2.com/file/thetechzonelive/2016/Panavise_web.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Even though this tool is designed to hold PCBs, I also found it very useful for mounting my smartphone to display circuit diagrams if I’m away from my computer. I guess you can teach an old vise new tricks.&lt;/p&gt;
+
+&lt;p&gt;The Good:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;cheap (in price)&lt;/li&gt;
+  &lt;li&gt;desk mountable&lt;/li&gt;
+  &lt;li&gt;strong base&lt;/li&gt;
+  &lt;li&gt;doubles as a smartphone holder&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Things that could be improved:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;plastic jaws&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I suppose it’d give it a 7.5/10&lt;/p&gt;
+
+&lt;p&gt;Purchase: &lt;a href=&quot;http://amzn.to/2lg2wF9&quot;&gt;Amazon&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h6 id=&quot;disclosures&quot;&gt;Disclosures&lt;/h6&gt;
+&lt;p&gt;I purchased the product with my own funds. The opinions expressed in this review are my own, no one reviewed the content before it was posted, and I am not being compensated for my review.&lt;/p&gt;
+
+&lt;p&gt;We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.&lt;/p&gt;</content><author><name>Anthony Di Iorio</name></author><category term="Tools" /><summary type="html">I picked up a Panavise Junior a few months ago because I needed something to hold PCBs while I work. Before this I’d just work directly on my workspace and get constantly frustrated when the PCB shifted and components got moved out of place.</summary></entry></feed>

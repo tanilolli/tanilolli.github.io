@@ -1,4 +1,273 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-08-09T15:16:00-04:00</updated><id>/</id><title type="html">The Tech Zone Live</title><subtitle>By Anthony Di Iorio VE2HEW</subtitle><entry><title type="html">ISS SSTV December Event</title><link href="/ISS-SSTV-December-Event" rel="alternate" type="text/html" title="ISS SSTV December Event" /><published>2017-12-08T00:00:00-05:00</published><updated>2017-12-08T00:00:00-05:00</updated><id>/ISS-SSTV-December-Event</id><content type="html" xml:base="/ISS-SSTV-December-Event">&lt;p&gt;Whether you’re a ham or just a listener, capturing images from the International Space Station is always a lot of fun. With a little help from a satellite tracking program, you can easily receive images from the ISS with nothing more than a cheap RTL-SDR dongle, a scanner, or a handheld VHF radio.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-11-29T01:54:33-05:00</updated><id>/</id><title type="html">The Tech Zone Live</title><subtitle>By Anthony Di Iorio VE2HEW</subtitle><entry><title type="html">Retevis RT8 GPS Review</title><link href="/Retevis-RT8-Review" rel="alternate" type="text/html" title="Retevis RT8 GPS Review" /><published>2019-11-29T00:00:00-05:00</published><updated>2019-11-29T00:00:00-05:00</updated><id>/Retevis-RT8-Review</id><content type="html" xml:base="/Retevis-RT8-Review">&lt;p&gt;The Retevis RT8 GPS is an inexpensive handheld radio with DMR digital voice capability, packed with many cool features, and very extensible with custom firmware.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/jrCehs_Tdo0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#first-impressions&quot;&gt;First Impressions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#programming&quot;&gt;Programming&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#gps-to-aprs&quot;&gt;GPS to APRS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#custom-firmware&quot;&gt;Custom Firmware&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;first-impressions&quot;&gt;First Impressions&lt;/h2&gt;
+
+&lt;p&gt;The RT8 has a solid plastic case with a nice finish. The radio is rated IP67 for dust and water resistance and has gaskets around the accessory port, battery, and battery contacts.&lt;/p&gt;
+
+&lt;p&gt;Included with the radio is a 2200 mAh battery, programming cable, desktop charger, belt clip, and an earpiece with a lock. The speaker mic connector is a Kenwood style.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2019/11/rt8/stuff.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The radio also comes with two antennas. A short rubber duck, and a longer whip antenna. The radio has an SMA female connector, the antennas have SMA male connectors. Below are their measurements from a NanoVNA-H.&lt;/p&gt;
+
+&lt;h3 id=&quot;rubber-duck-475&quot;&gt;Rubber Duck 4.75”&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Frequency&lt;/th&gt;
+      &lt;th&gt;Return Loss&lt;/th&gt;
+      &lt;th&gt;VSWR&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;432.000 MHz&lt;/td&gt;
+      &lt;td&gt;-11.69 dB&lt;/td&gt;
+      &lt;td&gt;1.70&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;446.100 MHz&lt;/td&gt;
+      &lt;td&gt;-8.58 dB&lt;/td&gt;
+      &lt;td&gt;2.19&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;450.000 MHz&lt;/td&gt;
+      &lt;td&gt;-8.00 dB&lt;/td&gt;
+      &lt;td&gt;2.32&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2019/11/rt8/AntDuck-min.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;whip-135&quot;&gt;Whip 13.5”&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Frequency&lt;/th&gt;
+      &lt;th&gt;Return Loss&lt;/th&gt;
+      &lt;th&gt;VSWR&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;432.000 MHz&lt;/td&gt;
+      &lt;td&gt;-14.15 dB&lt;/td&gt;
+      &lt;td&gt;1.49&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;446.100 MHz&lt;/td&gt;
+      &lt;td&gt;-9.81 dB&lt;/td&gt;
+      &lt;td&gt;1.96&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;450.000 MHz&lt;/td&gt;
+      &lt;td&gt;-8.04 dB&lt;/td&gt;
+      &lt;td&gt;2.31&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2019/11/rt8/AntWhip-min.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Both antennas are decent. About what you would expect from an HT antenna. The included whip resonates in the 70cm amateur band, so it would be the antenna to use in my opinion. And it will be much more efficient compared to the coiled up rubber duck antenna.&lt;/p&gt;
+
+&lt;h3 id=&quot;fit-and-finish&quot;&gt;Fit and Finish&lt;/h3&gt;
+
+&lt;p&gt;The radio has a nice feel in the hand. It feels robust and has a nice weight. The knobs are smooth, and the buttons are nice and clicky. No mushy buttons here! The speaker is big, gets loud, and sounds great. Microphone audio is good too. Nice clear audio with good frequency response. Not muffled like other radios from overseas.&lt;/p&gt;
+
+&lt;h3 id=&quot;audio-and-range-testing&quot;&gt;Audio and Range Testing&lt;/h3&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;150&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; allow=&quot;autoplay&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/720158680%3Fsecret_token%3Ds-vJGp4&amp;amp;color=%23191a26&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Analog audio is nice and smooth. About 300 - 4000 hz frequency response.&lt;br /&gt;
+DMR audio sounds good too. About 100 - 3850 hz frequency response.&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;150&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; allow=&quot;autoplay&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/720158677%3Fsecret_token%3Ds-6pEpJ&amp;amp;color=%23191a26&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Analog starts to break up on the frige, going in and out of the squelch and into the noise, while DMR continues to stay crystal clear. Very impressive!&lt;/p&gt;
+
+&lt;h2 id=&quot;programming&quot;&gt;Programming&lt;/h2&gt;
+
+&lt;p&gt;Download the latest programming software from &lt;a href=&quot;https://www.retevis.com/resources-center&quot;&gt;Retevis: Programming Software&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Obtain a DMR ID from &lt;a href=&quot;https://www.radioid.net/&quot;&gt;RadioID.net&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Programming a DMR radio is a little different than plain old analog FM. There are a few more things we need to include in a channel to get on the air, namely Color Code, Time Slot, and Talkgroup. A Color Code, or CC, is the DMR equivalent of a CTCSS tone. Time Slot, or TS, chooses TS1 or TS2 on a repeater. This allows two users to transmit on a repeater using &lt;a href=&quot;https://en.wikipedia.org/wiki/Time-division_multiple_access&quot;&gt;TDMA&lt;/a&gt;. And finally, a Talkgroup, or TG, is like a virtual channel that many repeaters can link to. For example, you can have Talkgroups for local, regional, statewide, countrywide, worldwide, or special interest groups.&lt;/p&gt;
+
+&lt;p&gt;First open &lt;strong&gt;General Settings&lt;/strong&gt; to enter your DMR Radio ID, and callsign. You will also need to set TX Preamble Duration to 960 ms. On this page you can also change from the default splash screen to a custom text display.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2019/11/rt8/general.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next we’ll find a repeater to connect to. There are multiple networks on DMR, Brandmeister, DMRPlus, and DMR-MARC. You can find a map/list of DMR repeaters here: &lt;a href=&quot;http://cqdmrmap.com/&quot;&gt;CQ DMR Map&lt;/a&gt;, &lt;a href=&quot;https://dmr-marc.net/repeaters.html&quot;&gt;DMR-MARC&lt;/a&gt;, &lt;a href=&quot;https://brandmeister.network/?page=repeaters&quot;&gt;Brandmeister&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In this example, I found a local DMR-MARC repeater nearby on Mount-Royal. Since DMR-MARC repeaters are limited to the talkgroups set up by the repeater owner, programming is pretty straightforward. In this case, the repeater owner has listed all the available talkgroups, organized by timeslot. If not, you might try looking for a local DMR group website that lists available talkgroups in your area.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2019/11/rt8/DMRMARC.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, add the available talkgroups to your &lt;strong&gt;Digital Contacts&lt;/strong&gt; list.&lt;/p&gt;
+
+&lt;p&gt;Click &lt;strong&gt;Add&lt;/strong&gt;, then fill in the &lt;strong&gt;Contact Name&lt;/strong&gt;, and &lt;strong&gt;Call ID&lt;/strong&gt; (TG). Make sure &lt;strong&gt;Call Type&lt;/strong&gt; is set to &lt;strong&gt;Group Call&lt;/strong&gt;. Private Calls are only used for repeater commands such as linking reflectors, status checks, or private calls to other users.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2019/11/rt8/Groups-min.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, create an &lt;strong&gt;RX Group List&lt;/strong&gt; for each time slot, and add the appropriate talkgroups. This will allow you to hear active talkgroups. As an alternative, my preferred way to do this is using the md380tools custom firmware with promiscuous mode enabled. This saves lots of time programming and enables other useful features.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;(&lt;a href=&quot;#custom-firmware&quot;&gt;See section on custom firmware&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2019/11/rt8/RXGroups-min.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we can start creating channels! Right-click Channel Information and click Add.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2019/11/rt8/CHAdd-min.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Set the following:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Setting&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Channel Mode&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Digital&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;TOT (Timeout)&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;180 seconds&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Channel Name&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Repeater / Talkgroup&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;RX Frequency&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Repeater Output Frequency&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;TX Frequency&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Repeater Input Frequency&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Admit Criteria&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Color Code&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Contact Name&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Digital Contact/Talkgroup&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Group List&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;RX Group, or none for automatic&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Color Code&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;As described on repeater listing&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Repeater Slot&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Time Slot 1 or 2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2019/11/rt8/RCM-min.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Repeat this for all the talkgroups you want.&lt;/p&gt;
+
+&lt;p&gt;Next, create a Zone for the repeater and add the channels in. I like to create a Zone for each Time Slot, or you can create a Zone 1 with commonly used talkgroups, and another for the rest. A Zone can only hold 16 channels.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2019/11/rt8/Zones-min.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want to enable scanning, create a Scan List, add the channels you wish to scan, and then select the Scan List when editing a channel. You can also add analog channels to a Scan List.&lt;/p&gt;
+
+&lt;h3 id=&quot;brandmeister&quot;&gt;Brandmeister&lt;/h3&gt;
+
+&lt;p&gt;For Brandmeister, you have free reign on what talkgroups you want to use and aren’t at the mercy of a repeater/C-Bridge owner. Add talkgroups to your digital contacts list as you please.&lt;/p&gt;
+
+&lt;p&gt;You can find a list of talkgroups here: &lt;a href=&quot;https://brandmeister.network/?page=talkgroups&quot;&gt;Brandmeister: Talkgroups&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Regular talkgroups are used on Time Slot 1, Local/Reflector is used on Time Slot 2.&lt;/p&gt;
+
+&lt;h3 id=&quot;analog&quot;&gt;Analog&lt;/h3&gt;
+
+&lt;p&gt;Analog channels are programmed similarly. Just set the Channel Mode to Analog, Bandwidth to 25khz, TX/RX frequency, and enter the CTCSS info at the bottom.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2019/11/rt8/Analog-min.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;gps-to-aprs&quot;&gt;GPS to APRS&lt;/h2&gt;
+&lt;p&gt;Beaconing to APRS over Brandmeister is very easy. Add a digital contact for the APRS gateway, &lt;strong&gt;310999&lt;/strong&gt; for USA servers, or &lt;strong&gt;302999&lt;/strong&gt; for Canada. See the &lt;a href=&quot;https://wiki.brandmeister.network/index.php/United_States_of_America&quot;&gt;Brandmeister Wiki&lt;/a&gt; for other countries.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;Call Type&lt;/strong&gt; must be set to &lt;strong&gt;Private Call&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2019/11/rt8/GPSContact-min.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, go to &lt;strong&gt;GPS System&lt;/strong&gt; in the sidebar, set the &lt;strong&gt;GPS Report Interval&lt;/strong&gt;, and &lt;strong&gt;Destination ID&lt;/strong&gt; to the APRS gateway for your country’s master server.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2019/11/rt8/GPSSys-min.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To enable beaconing, edit a channel to set the &lt;strong&gt;GPS System&lt;/strong&gt; to the one you configured earlier. There is no need to enable Send GPS Info or Receive GPS Info. These settings will only send your GPS info to the talkgroup/contact you have selected. It does not forward GPS to the APRS gateway contact if you have a different contact/talkgroup selected. Keep this off to prevent unnecessary GPS transmissions after you unkey.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2019/11/rt8/BMAPRS-min.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can enable or disable beaconing on the radio on any channel in the settings.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Menu &amp;gt; Utilities &amp;gt; Radio Settings &amp;gt; GPS &amp;gt; Select System&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;brandmeister-selfcare&quot;&gt;Brandmeister Selfcare&lt;/h3&gt;
+
+&lt;p&gt;Navigate to &lt;a href=&quot;https://brandmeister.network/?page=selfcare&quot;&gt;Brandmeister: SelfCare&lt;/a&gt; to set up the APRS gateway.&lt;/p&gt;
+
+&lt;p&gt;Set your radio &lt;strong&gt;Brand&lt;/strong&gt; to Chinese Radio, &lt;strong&gt;APRS interval&lt;/strong&gt; to 60 sec, &lt;strong&gt;APRS Callsign&lt;/strong&gt; to your &lt;a href=&quot;http://www.aprs.org/aprs11/SSIDs.txt&quot;&gt;APRS SSID&lt;/a&gt;, and set &lt;strong&gt;APRS Text&lt;/strong&gt; to your APRS Message. The APRS Text will also be used for Talker Alias on compatible radios.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2019/11/rt8/selfcare-min.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;aprsfi&quot;&gt;APRS.fi&lt;/h3&gt;
+
+&lt;p&gt;Once your radio locks to GPS and you’re on a channel with a GPS System enabled, your APRS packets should start showing up on &lt;a href=&quot;https://aprs.fi/&quot;&gt;APRS.fi&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2019/11/rt8/aprs-min.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;custom-firmware&quot;&gt;Custom Firmware&lt;/h2&gt;
+
+&lt;p&gt;One of the great reasons to choose a Retevis RT3/RT8 or TYT MD380/MD390 is the awesome custom firmware created by Travis Goodspeed called md380tools. It has excellent features that really make this radio work well for us amateur radio operators.&lt;/p&gt;
+
+&lt;p&gt;My favorite features are the caller ID database for all registered users and promiscuous mode which enables you to receive anything that’s being transmitted on the time slot. This makes programming easy, especially on the Brandmeister network, where there are hundreds of talkgroups that you can access. Not only that, but you can hear talkgroups that you didn’t program into a receive group, so you can hear other people on the repeater on different talkgroups. This is especially handy to make sure you aren’t stepping on anyone’s conversation that you wouldn’t otherwise hear. Other nice features include last heard, mic bar graph, mic gain, extended channel info (frequency, talkgroup, timeslot), and more.&lt;/p&gt;
+
+&lt;p&gt;My preferred method of installation is KD4Z’s excellent Virtual Machine installer. It takes care of compiling the latest version, adding in some tweaks, and building a contact list.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2019/11/rt8/VM-min.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/travisgoodspeed/md380tools&quot;&gt;GitHub: travisgoodspeed/md380tools&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/KD4Z/md380tools-vm&quot;&gt;GitHub: KD4Z/md380tools-vm&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;The Retevis RT8 GPS is a pretty nice radio. Being a monobander with a superheterodyne receiver, it cuts above in performance compared to the dual-band alternatives. Audio quality is excellent for a handheld, and the build is very robust. Add in DMR, and you have a very inexpensive radio that does a whole lot.&lt;/p&gt;
+
+&lt;p&gt;I would definitely recommend this radio, and installing the custom firmware!&lt;/p&gt;
+
+&lt;h3 id=&quot;availability&quot;&gt;Availability&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.retevis.com/rt8&quot;&gt;Retevis RT8&lt;/a&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;disclosures&quot;&gt;Disclosures&lt;/h6&gt;
+&lt;p&gt;I was not financially compensated for this review. Retevis provided the RT8 sample for review. The opinions expressed in my review are my own based on my experience with the product.&lt;/p&gt;</content><author><name>Anthony Di Iorio</name></author><category term="Ham Radio" /><summary type="html">The Retevis RT8 GPS is an inexpensive handheld radio with DMR digital voice capability, packed with many cool features, and very extensible with custom firmware.</summary></entry><entry><title type="html">ISS SSTV December Event</title><link href="/ISS-SSTV-December-Event" rel="alternate" type="text/html" title="ISS SSTV December Event" /><published>2017-12-08T00:00:00-05:00</published><updated>2017-12-08T00:00:00-05:00</updated><id>/ISS-SSTV-December-Event</id><content type="html" xml:base="/ISS-SSTV-December-Event">&lt;p&gt;Whether you’re a ham or just a listener, capturing images from the International Space Station is always a lot of fun. With a little help from a satellite tracking program, you can easily receive images from the ISS with nothing more than a cheap RTL-SDR dongle, a scanner, or a handheld VHF radio.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;images/2017/12/ISS-SSTV-1.jpg&quot; alt=&quot;&quot; /&gt;
 &lt;img src=&quot;images/2017/12/ISS-SSTV-2.jpg&quot; alt=&quot;&quot; /&gt;
@@ -331,41 +600,4 @@ Source: &lt;a href=&quot;https://www.massdrop.com/ext/ergodox&quot;&gt;Massdrop 
 &lt;p&gt;To take customization a step further, you can get skins for the Pebble in matte/glossy colors, carbon fiber, and fake metal/wood varieties. Most, if not all of the skins available online include screen protectors which are also very important since the Pebble’s screen is made of plastic and can scratch easily.&lt;/p&gt;
 
 &lt;h3 id=&quot;a-few-weeks-with-the-pebble&quot;&gt;A Few Weeks With The Pebble&lt;/h3&gt;
-&lt;p&gt;This thing is &lt;strong&gt;awesome&lt;/strong&gt;. I love being able to just take a quick glance at my wrist when I receive a push notification and deciding if it’s worth the time to take out my phone. The recent release of the 2.0 firmware has brought great apps to my wrist, and I can’t wait to delve into the SDK and make my own in the coming weeks (because I’m busy at the moment).&lt;/p&gt;</content><author><name>Anthony Di Iorio</name></author><category term="Watches" /><summary type="html">I picked up one of the original Pebble smartwatches a few weeks ago and it’s been pretty great, but the only thing I’d change is the strap. Fortunately you can because unlike the new Pebble Steel, the original Pebble accepts standard 22mm watch bands.</summary></entry><entry><title type="html">Panavise Junior Review</title><link href="/panavise-junior-review" rel="alternate" type="text/html" title="Panavise Junior Review" /><published>2013-11-13T02:15:00-05:00</published><updated>2013-11-13T02:15:00-05:00</updated><id>/panavise-junior-review</id><content type="html" xml:base="/panavise-junior-review">&lt;p&gt;I picked up a &lt;a href=&quot;http://amzn.to/2lg2wF9&quot;&gt;Panavise Junior&lt;/a&gt; a few months ago because I needed something to hold PCBs while I work. Before this I’d just work directly on my workspace and get constantly frustrated when the PCB shifted and components got moved out of place.&lt;/p&gt;
-
-&lt;p&gt;To mount PCBs or other small objects onto the vise there are two horizontal and two vertical slots available on the jaws. To control the position of the jaws there’s a small adjustment knob on the jaw assembly and a knob on the base to move the head.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-build&quot;&gt;The Build&lt;/h2&gt;
-
-&lt;p&gt;Despite the Junior being Panavise’s lowest end tabletop vise, it still features a strong base made out of cast aluminum. Unfortunately it falls short on the jaws because they are made with plastic. I doubt this would become an issue in the future since small PCBs shouldn’t carry much weight, but it’s still something I’d worry about if you were to put too much tension on them.&lt;/p&gt;
-
-&lt;h2 id=&quot;teach-an-old-vise-new-tricks&quot;&gt;Teach an old vise new tricks&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://f001.backblazeb2.com/file/thetechzonelive/2016/Panavise_web.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Even though this tool is designed to hold PCBs, I also found it very useful for mounting my smartphone to display circuit diagrams if I’m away from my computer. I guess you can teach an old vise new tricks.&lt;/p&gt;
-
-&lt;p&gt;The Good:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;cheap (in price)&lt;/li&gt;
-  &lt;li&gt;desk mountable&lt;/li&gt;
-  &lt;li&gt;strong base&lt;/li&gt;
-  &lt;li&gt;doubles as a smartphone holder&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Things that could be improved:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;plastic jaws&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I suppose it’d give it a 7.5/10&lt;/p&gt;
-
-&lt;p&gt;Purchase: &lt;a href=&quot;http://amzn.to/2lg2wF9&quot;&gt;Amazon&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h6 id=&quot;disclosures&quot;&gt;Disclosures&lt;/h6&gt;
-&lt;p&gt;I purchased the product with my own funds. The opinions expressed in this review are my own, no one reviewed the content before it was posted, and I am not being compensated for my review.&lt;/p&gt;
-
-&lt;p&gt;We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.&lt;/p&gt;</content><author><name>Anthony Di Iorio</name></author><category term="Tools" /><summary type="html">I picked up a Panavise Junior a few months ago because I needed something to hold PCBs while I work. Before this I’d just work directly on my workspace and get constantly frustrated when the PCB shifted and components got moved out of place.</summary></entry></feed>
+&lt;p&gt;This thing is &lt;strong&gt;awesome&lt;/strong&gt;. I love being able to just take a quick glance at my wrist when I receive a push notification and deciding if it’s worth the time to take out my phone. The recent release of the 2.0 firmware has brought great apps to my wrist, and I can’t wait to delve into the SDK and make my own in the coming weeks (because I’m busy at the moment).&lt;/p&gt;</content><author><name>Anthony Di Iorio</name></author><category term="Watches" /><summary type="html">I picked up one of the original Pebble smartwatches a few weeks ago and it’s been pretty great, but the only thing I’d change is the strap. Fortunately you can because unlike the new Pebble Steel, the original Pebble accepts standard 22mm watch bands.</summary></entry></feed>
